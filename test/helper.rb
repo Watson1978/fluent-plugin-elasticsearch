@@ -1,9 +1,9 @@
-require 'simplecov'
-SimpleCov.start do
-  add_filter do |src|
-    !(src.filename =~ /^#{SimpleCov.root}\/lib/)
-  end
-end
+# require 'simplecov'
+# SimpleCov.start do
+#   add_filter do |src|
+#     !(src.filename =~ /^#{SimpleCov.root}\/lib/)
+#   end
+# end
 
 # needs to be after simplecov but before test/unit, because fluentd sets default
 # encoding to ASCII-8BIT, but coverall might load git data which could contain a
