@@ -8,11 +8,12 @@ gem 'strptime', require: false if RUBY_ENGINE == "ruby" && RUBY_VERSION =~ /^2/
 gem "irb" if RUBY_ENGINE == "ruby" && RUBY_VERSION >= "2.6"
 gem "elasticsearch-xpack" if ENV["USE_XPACK"]
 gem "oj"
-gem 'elasticsearch', '<= 8.19.0'
-gem 'elasticsearch-api', '<= 8.19.0'
-gem 'elastic-transport', '<= 8.4.0'
-gem 'faraday', '= 2.13.4'
-gem 'faraday-net_http', '= 3.4.1'
-gem 'faraday-excon', '= 2.3.0'
-gem 'webmock', '= 3.25.1'
-gem 'excon', '= 1.2.5'
+
+gem 'elasticsearch', '= 9.1.1'
+# gem 'elasticsearch-api', '= 8.3.0'
+# gem 'elastic-transport', '= 8.3.0'
+# gem 'faraday', '= 2.10.0'
+# # gem 'faraday-net_http', '= 3.0.0'
+# # gem 'faraday-excon', '= 2.1.0'
+# gem 'webmock', '= 3.0.0'
+# gem 'excon', '= 1.2.5'
