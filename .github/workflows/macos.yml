@@ -1,13 +1,16 @@
 name: Testing on macOS
 on:
-  - push
-  - pull_request
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ] 
 permissions:
   contents: read
 
 jobs:
   build:
     runs-on: ${{ matrix.os }}
+    timeout-minutes: 10
     strategy:
       fail-fast: false
       matrix:
